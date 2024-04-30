@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SobreNosController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/contato', function () {
+    return view('app.contato');
+})->name('contato');
 
-route::get('contato', [ContatoController::class, 'contato']);
-route::post('contato', [ContatoController::class, 'enviarFormulario']);
+
+Route::get('/', [HomeController::class, 'homePage'])->name('home');
+Route::get('/sobre-nos', [SobreNosController::class, 'sobrenosPage'])->name('sobrenos');
+
