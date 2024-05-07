@@ -24,8 +24,10 @@ class ContatoController extends Controller
     */
     public function enviarFormulario(Request $request)
     {
+        dd($request->all());
         try {
             Contato::create([
+                //nome da coluna no banco => nome do campo do formulario 
                 'name' => $request->name,
                 'email' => $request->email,
                 'telefone' => $request->telefone,

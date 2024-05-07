@@ -7,21 +7,29 @@
 <!------ ---->
 
 @section('css')
-
+    
 @endsection
 
 <!------ ---->
 
 @section('body')
 <div>
-    <p>Estou na página de Sobre-nos</p>
+    <h1>O que fazemos</h1>
+    <p>Descrição sobre o que sua empresa faz.</p>
 </div>
-@endsection
 
-<!------ ---->
+<div>
+    <h1>Como fazemos</h1>
+    <p>Descrição sobre como sua empresa realiza suas atividades.</p>
+</div>
 
-@section('js')
-<script>
-    console.log("Estou na página de Sobre-nos");
-</script>
+<div>
+    <h1>Grupo</h1>
+    <p>Informações sobre o grupo ao qual sua empresa pertence.</p>
+</div>
+
+<div>
+    <h1>Produtos</h1>
+    <p>Lista de produtos oferecidos pela sua empresa.</p>
+</div>
 @endsection

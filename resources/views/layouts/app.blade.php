@@ -10,49 +10,31 @@
     @yield('css')
 </head>
 <body>  
-    <nav class="navbar navbar-expand-lg bg-dark">
+          {{-- MENU --}}
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
         <div class="container-fluid">
-          <a class="navbar-brand bg-white" href="#">AQUI SO TEM NEGAO</a>
+          <a class="navbar-brand" href="#">REUS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active bg-white" aria-current="page" href="{{route('home')}}">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active bg-white" aria-current="page" href="{{route('contato')}}">Contato</a>
+                <a class="nav-link active" aria-current="page" href="{{route('contato.submit')}}">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-white" href="{{ route('sobrenos')}}">Sobre-nos</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('sobrenos')}}">Sobre-nós</a>
               </li>
               <li class="nav-item">
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle bg-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item bg-white" href="#">Action</a></li>
-                  <li><a class="dropdown-item bg-white" href="#">Another action</a></li>
-                  <li><a class="dropdown-item bg-white" href="#">Something else here</a></li>
-                </ul>
               </li>
             </ul>
           </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-                <!-- Navbar content -->
-              </nav>
-          </form>
-        </div>
-        
       </nav>
-      
-    <div class="container">
+          {{-- body --}}
+    <div class="container-fluids">
         @yield('body')
     </div>
 

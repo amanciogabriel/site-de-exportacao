@@ -4,7 +4,13 @@
     <title>Home</title>
 @endsection
 
-<!------ ---->
+<!------ Separação ---->
+
+@section('css')
+    
+@endsection
+
+<!------ Serapação ---->
 
 @section('body')
 <div>
