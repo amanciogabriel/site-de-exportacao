@@ -42,8 +42,6 @@
 
 </body>
 </html>
-
-
     <script src="{{ asset('js/homeblade.js') }}"></script>
 </html>
 
