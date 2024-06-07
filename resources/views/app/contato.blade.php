@@ -13,12 +13,12 @@
 <!------ Serapação ---->
 
 @section('body')
-<div class="row">
+<div class="row mt-5 pt-4">
     <div class="col"></div>
     <div class="col">
-        <form action="{{ route ('contato.submit') }}" method="post" class="mt-4 mb-4">
+        <form action="{{ route ('contato.submit') }}" method="post" class="mt-4 mb-2">
             @csrf
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Nome</label>
                 <input type="text" name="name" class="form-control">
             </div>
