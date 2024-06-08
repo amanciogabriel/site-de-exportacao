@@ -16,8 +16,8 @@
 <body>
 
 <nav class="navbar fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('home')}}">CARICACTUS<img class="logo" width="65px" src="{{asset('img/caricactus.png')}}"></a>
+    <div class="container">
+        <a class="navbar-brand" href="{{ route('home')}}">CARICACTUS<img class="logo" width="65px" src="{{asset('img/elemento-1.png')}}"></a>
 
         <form class="d-flex mt-3" role="search">
             <input class="form-control me-2" type="search" placeholder="Quadros" aria-label="Search">
@@ -65,8 +65,8 @@
 <div class="container-fluid mt-4">
     @yield('body')
 </div>
-<footer class="text-center text-lg-start" style="background-color: #000000;">
-    <div class="container-fluid d-flex justify-content-center py-15">
+<footer class="text-center text-lg-start fixed-bottom" style="background-color: #000000;">
+    <div class="container-fluid d-flex justify-content-center">
       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
         <i class="fab fa-facebook-f"></i>
       </button>
@@ -84,7 +84,6 @@
     <!-- Copyright -->
     <div class="text-center text-white p-3" style="background-color: rgba(255, 255, 255, 0.2);">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
   </footer>
