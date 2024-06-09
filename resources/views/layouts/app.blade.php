@@ -10,25 +10,16 @@
     @yield('css')
 
     <link rel="stylesheet" href="{{asset('css/appblade.css')}}">
-
-@section('body')
 </head>
 <body>
 
-<nav class="navbar fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home')}}">CARICACTUS<img class="logo" width="65px" src="{{asset('img/elemento-1.png')}}"></a>
+        <a class="navbar-brand" href="{{ route('home')}}"><img class="logo" width="100px" src="{{asset('img/logocerta.png')}}"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Quadros" aria-label="Search">
-            <button class="btn btn-outline-success bg-transparent" type="submit">Pesquisar</button>
-        </form>
-        <div class="d-flex justify-content-end align-items-center">
-            <img width="35px" src="{{ asset('img/carrinho.png') }}" class="me-4">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
@@ -49,7 +40,7 @@
                         <a class="nav-link" aria-current="page" href="{{ route('contato.submit') }}">Contato<img class="logo" width="12px" src="{{asset('img/comentario.png')}}"></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="page">filtros</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="page">Filtros</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Cor</a></li>
                             <li><a class="dropdown-item" href="#">Tamanho</a></li>
@@ -61,32 +52,37 @@
         </div>
     </div>
 </nav>
-{{-- body --}}
-<div class="container-fluid mt-4">
+
+<div class="container-fluid mt-5 pt-4">
     @yield('body')
 </div>
-<footer class="text-center text-lg-start fixed-bottom" style="background-color: #000000;">
-    <div class="container-fluid d-flex justify-content-center">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-        <i class="fab fa-facebook-f"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-        <i class="fab fa-youtube"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-        <i class="fab fa-instagram"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-        <i class="fab fa-twitter"></i>
-      </button>
-    </div>
 
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(255, 255, 255, 0.2);">
-      © 2020 Copyright:
+<footer class="footer bg-dark text-center text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
+                        <i class="fab fa-youtube"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="mb-0">© 2024 SeuSite. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Copyright -->
-  </footer>
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
