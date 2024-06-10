@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home')}}"><img class="logo" width="100px" src="{{asset('img/logocerta.png')}}"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -56,32 +56,6 @@
 <div class="container-fluid mt-5 pt-4">
     @yield('body')
 </div>
-
-<footer class="footer bg-dark text-center text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-                        <i class="fab fa-facebook-f"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-                        <i class="fab fa-youtube"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-                        <i class="fab fa-instagram"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff;">
-                        <i class="fab fa-twitter"></i>
-                    </button>
-                </div>
-                <div class="text-center mt-3">
-                    <p class="mb-0">© 2024 SeuSite. Todos os direitos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
